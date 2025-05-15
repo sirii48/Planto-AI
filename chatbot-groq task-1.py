@@ -73,7 +73,7 @@ embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 vectorstore = FAISS.from_documents(chunks, embedding_model)
 
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = ""
 llm = GroqLLM(model="mistral-saba-24b", groq_api_key=GROQ_API_KEY)
 
 prompt = PromptTemplate(
